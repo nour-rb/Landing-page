@@ -11,16 +11,17 @@ body {
     margin: 0px;
 }
 .father {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: auto;
-    flex-shrink: 1;
+    flex-shrink: 0;
     flex-grow: 0;
 }
 
 /*this is container1 styling*/
-.hero, footer{ 
+.container01, footer{ 
     background-color: #1F2937;
     color: white;
     padding-right: 10px;
@@ -31,20 +32,21 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 .header{
     font-size: 24px;
     color: #F9FAF8;
     align-self: center;
+    font-weight: 500;
 }
 
 .right-links{
+    color:#E5E7EB;
     display: flex;
-    gap: 20px;
     font-size: 18px;
-    list-style-type: none;
-    text-decoration: none;
-    color: #E5E7EB;
+    list-style: none;
+    gap: 20px;
 }
 .Text{
     display: flex;
@@ -98,32 +100,26 @@ div.item > div.box {
     background-color: #E5E7EB;
     font-weight:lighter;
     font-style: italic;
-    font-size: 30px;
+    font-size: 36px;
     color: #1F2937;
-    padding: 100px;
-    padding-left: 250px;
-}
-
-div.container03 div {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    padding: 100px 0px 100px 380px;
+    
 }
 
 /*this is container4 styling*/
 .container04{
+   width: 100%;
    background-color: white;
    align-self: center;
+   border: #1F2937 solid 1px;
 }
 .subcon {
     background-color: #3882f6;
     color: white;
-    margin: 50px 100px;
-    border-radius: 7px;
+    margin: 50px 100px 50px 260px;
+    border-radius: 8px;
     padding: 20px 40px;
+    width: 60%;
 }
 
 /*Footer styling and Random element styling*/
@@ -132,6 +128,7 @@ div.container03 div {
     height: 70px;
     background-color: hwb(215 12% 78%);
     text-align: center;
+    font-size: small;
 }
 .footer > p {
     padding: 25px;
