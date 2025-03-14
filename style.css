@@ -15,24 +15,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: auto;
-    flex-shrink: 0;
-    flex-grow: 0;
+    flex: auto;
 }
 
 /*this is container1 styling*/
 .container01, footer{ 
     background-color: #1F2937;
     color: white;
-    padding-right: 10px;
-    padding-left: 10px;
+    /*padding-right: 10px;
+    padding-left: 10px;*/
 }
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px 70px;
+    margin-bottom: 60px;
 }
 .header{
     font-size: 24px;
@@ -48,16 +47,27 @@ body {
     list-style: none;
     gap: 20px;
 }
+.herocon {
+    display: flex;
+    justify-content: center;
+    padding: 20px 70px;
+    gap: 40px;
+    margin-bottom: 100px;
+}
 .Text{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 80%;
+    gap: 15px;
 }
 
-.herocon {
-    display: flex;
+img {
+    margin-right: 0px;
+    width: 100%;
+    height: 300px;
 }
+
 /*this is container2 styling*/
 .container02{
     background-color: white;
@@ -77,6 +87,8 @@ div.container02 > h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
     gap: 45px;
 }
  .item{
@@ -102,23 +114,22 @@ div.item > div.box {
     font-style: italic;
     font-size: 36px;
     color: #1F2937;
-    padding: 100px 0px 100px 380px;
-    
 }
 
 /*this is container4 styling*/
 .container04{
-   width: 100%;
    background-color: white;
    align-self: center;
+   flex-shrink: 1;
+   margin: 50px;
 }
 .subcon {
     background-color: #3882f6;
     color: white;
-    margin: 50px 100px 50px 260px;
     border-radius: 8px;
-    padding: 20px 40px;
-    width: 60%;
+    padding: 30px 70px;
+    width: 70%;
+    margin: 50px 100px;
 }
 
 /*Footer styling and Random element styling*/
@@ -132,10 +143,12 @@ div.item > div.box {
 .footer > p {
     padding: 25px;
 }
-img {
-    width: 200px;
-    height: 100px;
+a {
+    text-decoration: none;
+    color :#E5E7EB;
+    font-size: 18px;
 }
+
 button{
     color: white;
     background-color: #3882f6;
@@ -145,33 +158,3 @@ button{
     border: white solid 1px;
 }
 
-/* from here on i'm just gonna write exactly what they gave us in backupcode.png 
-body {
-    font-family: "Roboto";
-}
-.hero .footer {
-    background-color: #1F2937;
-}
-.Text p, .right-links {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-.header {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-button , .container04{
-    background-color: #3882f6;
-}
-div > h3 {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 900;
-}
-.container03 > p {
-    background-color:#E5E7EB;
-    font-size: 36px;
-    font-weight: light;
-    font-style: italic #1F2937;
-}
-    */
